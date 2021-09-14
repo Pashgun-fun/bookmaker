@@ -1,0 +1,42 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Gotham Pro";
+  background: #F0F1F2;
+}
+._container{
+  width: 90%;
+  margin: 0 auto;
+}
+.content{
+  margin:50px auto;
+  display: flex;
+  flex-direction: column;
+}
+.title{
+  width: max-content;
+  float: left;
+  margin-bottom: 23px;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.bookmakers{
+  &__list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+  }
+  &__item{
+    display: block;
+    min-height: 71px;
+    max-height: 71px;
+    background: #fff;
+    border-radius: 5px;
+    &:not(:last-child){
+      margin-bottom: 16px;
+    }
+  }
+}
