@@ -10,6 +10,10 @@ input {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 ._container {
   width: 90%;
   margin: 0 auto;
@@ -80,10 +84,10 @@ input {
   font-size: 14px;
   line-height: 24px;
   color: #3E3B4A;
-  margin-right: 38px;
+  margin-right: 2.4vw;
 }
 .bookmaker__logo {
-  margin-right: 25px;
+  margin-right: 1.6vw;
 }
 .bookmaker__logo img {
   width: 107px;
@@ -96,7 +100,72 @@ input {
   font-size: 16px;
   line-height: 24px;
   color: #33312C;
-  margin-right: 55px;
+  margin-right: 3.5vw;
+}
+.bookmaker__stars {
+  margin-right: 3.9vw;
+}
+.bookmaker__cost {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #33312C;
+}
+.bookmaker__cost::before {
+  content: "";
+  display: inline-block;
+  margin-right: 0.9vw;
+  width: 19px;
+  height: 19px;
+  background: url("../img/gift.png") no-repeat 50%;
+  background-size: cover;
+}
+.bookmaker__buttons {
+  margin-left: auto;
+  display: inline-block;
+}
+.bookmaker__buttons a:not(:last-child) {
+  margin-right: 1.4vw;
+}
+.bookmaker__review {
+  padding: 9px 15px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #191925;
+  border: 1px solid #67BC6D;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+}
+.bookmaker__review span {
+  font-weight: bold;
+}
+.bookmaker__overview {
+  padding: 9px 15px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #191925;
+  border: 1px solid #DADADA;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+}
+.bookmaker__site {
+  padding: 9px 15px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  background: #E2455A;
+  border-radius: 5px;
 }
 
 .rating {
@@ -112,7 +181,7 @@ input {
   height: 21px;
   background: url("../img/greyStar.png") no-repeat 50%;
   background-size: cover;
-  margin-right: 7px;
+  margin-right: 0.5vw;
 }
 
 .active-star {
@@ -120,5 +189,5 @@ input {
   height: 21px;
   background: url("../img/activeStar.png") no-repeat 50%;
   background-size: cover;
-  margin-right: 7px;
+  margin-right: 0.5vw;
 }
