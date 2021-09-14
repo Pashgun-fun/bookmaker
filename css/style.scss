@@ -4,6 +4,10 @@ body{
   font-family: "Gotham Pro";
   background: #F0F1F2;
 }
+input{
+  margin: 0;
+  padding: 0;
+}
 ._container{
   width: 90%;
   margin: 0 auto;
@@ -35,8 +39,58 @@ body{
     max-height: 71px;
     background: #fff;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
     &:not(:last-child){
       margin-bottom: 16px;
     }
   }
+}
+.bookmaker{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 34px;
+  &__number{
+    width: max-content;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: #3E3B4A;
+    margin-right: 38px;
+  }
+  &__logo{
+    margin-right: 25px;
+    img{
+      width: 107px;
+      height: 35px;
+      object-fit: cover;
+    }
+  }
+  &__title{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #33312C;
+    margin-right: 55px;
+  }
+}
+.rating{
+  display: flex;
+  align-items: center;
+  &__item{
+    width: 21px;
+    height: 21px;
+    background: url("../img/greyStar.png") no-repeat 50%;
+    background-size: cover;
+    margin-right: 7px;
+  }
+}
+.active-star{
+  width: 21px;
+  height: 21px;
+  background: url('../img/activeStar.png') no-repeat 50%;
+  background-size: cover;
+  margin-right: 7px;
 }
