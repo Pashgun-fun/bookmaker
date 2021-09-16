@@ -1,4 +1,9 @@
 @charset "UTF-8";
+@media only screen and (max-width: 1200px) {
+  .bookmaker {
+    padding: 0 14px !important;
+  }
+}
 body {
   margin: 0;
   padding: 0;
@@ -73,7 +78,7 @@ a {
 }
 
 .more {
-  padding: 9px 0;
+  padding: 12px 0;
   width: 178px;
   margin: 0 auto;
   border: 1px solid #DADADA;
@@ -225,6 +230,7 @@ a {
 
 .cells {
   width: 100%;
+  margin-bottom: 23px;
 }
 .cells__header {
   margin-bottom: 32px;
@@ -253,6 +259,11 @@ a {
   text-transform: uppercase;
   color: #7A798A;
 }
+.cells__menu li a:hover {
+  color: #5A3EC4;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
 .cells__main {
   display: -ms-grid;
   display: grid;
@@ -279,6 +290,8 @@ a {
   grid-column: 2/3;
   background: red;
   border-radius: 12px;
+  background: url("../img/fon.png") no-repeat;
+  background-size: 100% 100%;
 }
 
 .active-menu {

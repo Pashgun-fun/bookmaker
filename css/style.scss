@@ -1,3 +1,5 @@
+@import "adaptive";
+
 body{
   margin: 0;
   padding: 0;
@@ -56,7 +58,7 @@ a{
   }
 }
 .more{
-  padding: 9px 0;
+  padding: 12px 0;
   width: 178px;
   margin:  0 auto;
   border: 1px solid #DADADA;
@@ -188,6 +190,7 @@ a{
 }
 .cells{
   width: 100%;
+  margin-bottom: 23px;
   &__header{
     margin-bottom: 32px;
     display: flex;
@@ -208,6 +211,10 @@ a{
         line-height: 25px;
         text-transform: uppercase;
         color: #7A798A;
+        &:hover{
+          color: #5A3EC4;
+          transition: color 0.3s;
+        }
       }
     }
   }
@@ -229,6 +236,8 @@ a{
     grid-column: 2/3;
     background: red;
     border-radius: 12px;
+    background: url("../img/fon.png") no-repeat;
+    background-size: 100% 100%;
   }
 }
 .active-menu{
