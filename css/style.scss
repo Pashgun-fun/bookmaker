@@ -19,11 +19,16 @@ a{
   margin:50px auto;
   display: flex;
   flex-direction: column;
+  &__book{
+    margin-bottom: 88px;
+  }
+  &__title{
+    margin-bottom: 23px;
+  }
 }
 .title{
   width: max-content;
   float: left;
-  margin-bottom: 23px;
   font-size: 20px;
   line-height: 25px;
   font-weight: bold;
@@ -35,6 +40,7 @@ a{
     padding: 0;
     list-style: none;
     width: 100%;
+    margin-bottom: 23px;
   }
   &__item{
     display: block;
@@ -49,12 +55,32 @@ a{
     }
   }
 }
+.more{
+  padding: 9px 0;
+  width: 178px;
+  margin:  0 auto;
+  border: 1px solid #DADADA;
+  box-sizing: border-box;
+  border-radius: 5px;
+  transform: skew(-20deg);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 13px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #191925;
+  display: block;
+  span{
+    display: inherit;
+    transform: skew(20deg);
+  }
+}
 .bookmaker{
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
-  padding: 34px;
+  padding: 0 34px;
   &__number{
     width: max-content;
     font-weight: 600;
@@ -159,4 +185,73 @@ a{
   background: url('../img/activeStar.png') no-repeat 50%;
   background-size: cover;
   margin-right: 0.5vw;
+}
+.cells{
+  width: 100%;
+  &__header{
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__menu{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li{
+      display: inline-block;
+      &:not(:last-child){
+        margin-right: 13px;
+      }
+      a{
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 25px;
+        text-transform: uppercase;
+        color: #7A798A;
+      }
+    }
+  }
+  &__main{
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+  }
+  &__cards{
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    grid-gap: 13px;
+  }
+  &__card{
+    width: 100%;
+    min-height: 225px;
+    height: 225px;
+  }
+}
+.active-menu{
+  color: #5A3EC4 !important;
+}
+.card{
+  height: inherit;
+  background: #FFFFFF;
+  box-shadow: 0px 12px 39px rgba(0, 0, 0, 0.07);
+  border-radius: 7px;
+  padding: 16px 19px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  &__meta{
+    float: left;
+    font-size: 11px;
+    line-height: 24px;
+    color: #5A3EC4;
+    text-transform: uppercase;
+    margin-bottom: 1px;
+  }
+  &__title{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 14px;
+  }
 }
